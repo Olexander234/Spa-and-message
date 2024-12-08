@@ -1,0 +1,1620 @@
+/* Общие стили */
+body {
+  margin: 0;
+ 
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #2C5F4E;
+  z-index: 1000;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo img {
+  max-height: 50px;
+}
+
+.header-right {
+  display: flex;
+  gap: 15px;
+}
+
+
+
+.header-right a, .btn-header {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-header {
+  background-color: #e88c0b;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+.btn-header:hover, .header-right a:hover {
+  color: #D59C85;;
+}
+
+.menu-toggle {
+  display: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.slideshow-container {
+  margin-top: 60px; /* Отступ для хедера */
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.mySlides {
+  display: none;
+  position: relative;
+}
+
+.mySlides img {
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #2C5F4E;
+  text-align: center;
+  font-size: 60px;
+  font-family: "Dancing Script", cursive;
+ 
+  font-weight:700;
+  font-style: normal;
+}
+.text-1{
+  position: absolute;
+  bottom: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  font-family: "Marcellus", serif;
+  font-weight: 600;
+}
+.text-2{
+  position: absolute;
+  bottom: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Marcellus", serif;
+  font-weight: 600;
+}
+
+
+
+.slider-button {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border: none;
+  padding: 20px 40px;
+  border-radius: 5px;
+  
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.slider-button:hover {
+  background-color: #e88c0b;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .header-right {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
+  }
+
+  .header-right a,
+  .btn-header {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .header-right.active {
+    display: flex;
+  }
+
+  .text {
+    bottom: 30%;
+  left: 50%;
+    font-size: 18px; 
+  }
+
+  .text-1 {
+    bottom: 65%;
+    font-size: 20px;
+  }
+
+  .text-2 {
+    bottom: 60%;
+    font-size: 15px;
+  }
+
+  .slider-button {
+    bottom: 15%;
+    padding: 12px 30px;
+    font-size: 16px;
+  }
+
+ 
+}
+
+@media (min-width: 1200px) {
+  .text {
+    bottom: 45%;
+    font-size: 70px;
+  }
+
+  .slider-button {
+    padding: 15px 30px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .text {
+    bottom: 40%;
+    font-size: 10px;  /* Уменьшаем размер шрифта на мобильных */
+  }
+
+  .text-1, .text-2 {
+    display: none;  /* Меньший размер текста */
+  }
+
+  .slider-button {
+    bottom: 10%;
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+   .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  @media (max-width: 768px) {
+    .text {
+      font-size: 50px;
+      margin-top: -200px;
+    }
+    .text-title {
+      font-size: 20px;
+      margin-top: -250px;
+    }
+    .slider-button {
+      padding: 12px 40px;
+      font-size: 14px;
+    }
+  }
+  
+
+
+
+
+
+main{
+  max-width: 100%;
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+  
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Основной стиль для секции портфолио */
+.portfolio {
+  max-width: 100%;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #F2F7F2;
+}
+
+h2 {
+  font-size: 50px;
+  font-family: "Marcellus", serif;
+  font-weight: 400;
+}
+
+.portfolio-text {
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  padding: 3%;
+  font-style: normal;
+}
+
+/* Сетка для галереи */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px; /* Расстояние между колонками */
+}
+
+/* Стили для колонок */
+.column {
+  flex: 1 1 30%; /* Каждая колонка займет минимум 30% ширины */
+  text-align: center;
+  padding: 15px;
+  box-sizing: border-box; /* Для учета padding в ширине */
+  transition: transform 0.3s ease; /* Плавный переход при увеличении */
+}
+
+/* Эффект при наведении */
+.column:hover {
+  transform: scale(1.05); /* Увеличение блока на 5% */
+}
+
+/* Контейнер для контента */
+.conter {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.column img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.column h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  margin: 10px 0;
+  font-family: "Marcellus", serif;
+}
+
+.column p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 767px) {
+  h2 {
+    font-size: 30px;
+  }
+
+  .portfolio-text {
+    font-size: 14px;
+  }
+
+  /* Сетка для мобильных устройств: 1 колонка */
+  .row {
+    flex-direction: column;
+  }
+
+  .column {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Для планшетов и небольших экранов */
+@media (min-width: 768px) and (max-width: 1024px) {
+  h2 {
+    font-size: 40px;
+  }
+
+  .portfolio-text {
+    font-size: 16px;
+  }
+
+  .row {
+    flex-direction: row;
+  }
+
+  .column {
+    flex: 1 1 45%; /* Две колонки на экранах от 768px до 1024px */
+  }
+}
+
+/* Для экранов более 1024px (десктопы, телевизоры) */
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 50px;
+  }
+
+  .portfolio-text {
+    font-size: 18px;
+  }
+
+  .column {
+    flex: 1 1 30%; /* Три колонки на больших экранах */
+  }
+}
+
+
+
+ /* Секция информации */
+ .info-section {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 60px 2fr 2fr; /* Сетка: соцсети, пустой блок, фото */
+  
+  padding: 2px;
+  position: relative;
+  min-height: 90vh;
+}
+
+.social-block {
+  background-color: #2C5F4E;
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Элементы располагаются в столбик */
+  align-items: center;    /* Выравнивание по центру по горизонтали */
+  justify-content: space-evenly; /* Пространство между элементами равномерное */
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  height: 100%; /* Высота блока равна его родителю */
+}
+
+.social-block h3{
+  flex-direction: column;
+  font-family: "Dancing Script", cursive;
+  color: white;
+  font-weight:400;
+  font-style: normal;  
+}
+
+
+
+.social-block a {
+  text-decoration: none; /* Убираем подчеркивание ссылок */
+  color: white;
+  margin: 5px 0; /* Отступы между ссылками */
+  font-size: 30px; /* Размер текста ссылок */
+  transition: color 0.3s ease; /* Анимация для эффекта наведения */
+}
+
+.social-block a:hover {
+  color: #D59C85; /* Цвет при наведении */
+}
+
+/* Пустой блок */
+.empty-block {
+  width: 100%;
+  background-color: #FFE9DA;
+  opacity: 0.6;
+  border-radius: 5px;
+  justify-content: space-evenly;
+}
+
+/* Блок с изображением */
+.image-block {
+  background-image: url('./gallery/Сториборд\ 3000x2000\ \ пикс\ \(5\).jpeg'); /* Замените на нужное изображение */
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  justify-content: space-evenly;
+}
+
+/* Блок поверх второго и третьего */
+.overlay-block {
+  position: absolute;
+  top: 50%; /* Центрирование по вертикали */
+  left: 50%; /* Центрирование по горизонтали */
+  transform: translate(-50%, -50%); /* Смещение для точного центрирования */
+  background-color: rgba(246, 243, 243, 0.766); /* Полупрозрачный фон */
+  color: #fff;
+  width: 60%; /* Ширина блока */
+  height: 70%; /* Высота блока */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 15px;
+  border-radius: 10px;
+  z-index: 10; /* Поверх всех блоков */
+}
+
+.overlay-block h3 {
+  margin-bottom: 20px;
+  font-size: 20px; 
+  color: #555;
+  font-family: "Dancing Script", cursive;
+ 
+  font-weight:400;
+  font-style: normal;
+}
+
+.overlay-block p{
+  margin-bottom: 20px;
+  font-size: 5px;
+  color: #555;
+  font-family: "Dancing Script", cursive;
+ 
+  font-weight:400;
+  font-style: normal;
+
+
+}
+
+.overlay-block button {
+  
+  padding: 10px 30px;
+ 
+  background-color: white;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.overlay-block button:hover {
+  background-color: #e88c0b;
+  color: white;
+}
+
+/* Адаптивность от мобильных до телевизоров */
+
+/* Для мобильных устройств (меньше 768px) */
+@media (max-width: 768px) {
+  .info-section {
+      grid-template-columns: 1fr; /* Все блоки в один столбец */
+      grid-template-rows: auto auto auto;
+      height: auto;
+  }
+
+  .overlay-block {
+      width: 80%;
+      height: auto;
+      top: 60%;
+  }
+
+  .social-block {
+      font-size: 16px; /* Меньший размер шрифта для мобильных */
+      flex-direction: row; /* Горизонтальное расположение элементов */
+        justify-content: space-evenly; /* Равномерное распределение по горизонтали */
+  }
+
+  .social-block a {
+      font-size: 24px; /* Меньшие иконки соцсетей */
+  }
+
+  .overlay-block h3, .overlay-block p {
+      font-size: 1.2em; /* Уменьшаем размер текста */
+  }
+
+  .overlay-block button {
+      padding: 8px 20px; /* Уменьшаем размер кнопок */
+  }
+}
+
+/* Для планшетов (от 768px до 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .info-section {
+      grid-template-columns: 1fr 2fr 2fr; /* 2 колонки для соцсетей и пустого блока, и 1 колонка для изображения */
+  }
+
+  .overlay-block {
+      width: 70%;
+      height: auto;
+      top: 50%;
+  }
+
+  .social-block a {
+      font-size: 28px; /* Размер иконок соцсетей для планшетов */
+  }
+
+  .overlay-block h3, .overlay-block p {
+      font-size: 10px; /* Увеличиваем размер текста */
+  }
+
+  .overlay-block button {
+      padding: 10px 25px; /* Размер кнопок */
+  }
+}
+
+/* Для экранов с шириной 1024px и выше (десктопы, ноутбуки и телевизоры) */
+@media (min-width: 1024px) {
+  .info-section {
+      grid-template-columns: 1fr 2fr 2fr; /* Оставляем стандартную сетку */
+  }
+
+  .overlay-block {
+      width: 50%; /* Ширина блока с текстом */
+      height: 50%;
+      top: 50%;
+  }
+
+  .social-block {
+      font-size: 18px;
+  }
+
+  .social-block a {
+      font-size: 30px; /* Иконки соцсетей крупные для больших экранов */
+  }
+
+  .overlay-block h3, .overlay-block p {
+      font-size: 25px; /* Размер текста для десктопов */
+  }
+
+  .overlay-block button {
+      padding: 12px 30px; /* Кнопки стандартного размера */
+  }
+}
+
+/* Для больших экранов (например, телевизоры) */
+@media (min-width: 1600px) {
+  .info-section {
+      grid-template-columns: 1fr 2fr 2fr; /* Можно оставить такую же сетку */
+  }
+
+  .overlay-block {
+      width: 40%; /* Ширина блока с текстом на телевизоре */
+      height: 50%;
+      top: 50%;
+  }
+
+  .overlay-block button {
+      padding: 15px 35px; /* Увеличиваем размер кнопок на телевизорах */
+  }
+}
+.certificate-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color:#F2F7F2;
+  
+}
+
+.certificate-left {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  
+  height:100% ;
+}
+
+.certificate-left h2 {
+  font-size: 50px;
+  bottom: 80%;
+  text-align: center;
+  font-family: "Marcellus", serif;
+  font-weight: 400;
+}
+
+.certificate-left p {
+  font-size: 16px;
+  text-align: center;
+  color: #555;
+  font-family: "Work Sans", sans-serif;
+    font-style: normal;
+}
+
+
+.certificate-buttons {
+  display: flex;                /* Используем flexbox для центрирования */
+  justify-content: center;      /* Выравнивание кнопок по горизонтали */
+  gap: 10px;                    /* Отступ между кнопками */
+  margin-top: 150px;             /* Можно задать отступ сверху, если нужно */
+}
+
+.certificate-buttons .primary-btn, .secondary-btn {
+  padding: 10px 30px;
+  background-color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius:5px ;
+  border: none;
+  -webkit-border-radius:5px ;
+  -moz-border-radius:5px ;
+  -ms-border-radius:5px ;
+  -o-border-radius:5px ;
+}
+
+.certificate-buttons .primary-btn {
+  background-color:#2C5F4E;
+  color: white;
+}
+
+.certificate-buttons .primary-btn:hover{
+  background-color: #e88c0b;
+  color: white;
+}
+
+
+.certificate-buttons .secondary-btn {
+ background-color: #e88c0b;
+  color:white;
+}
+
+.certificate-buttons .secondary-btn:hover{
+  background-color: #2C5F4E;
+  color: white;
+}
+
+.overlay-block button:hover {
+  background-color: #e88c0b;
+  color: white;
+}
+
+
+
+
+.certificate-right {
+  flex: 1;
+  padding: 20px;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.slide h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.slide img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.prev-btn,
+.next-btn {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: #e88c0b;
+}
+
+
+
+
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .certificate-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .certificate-left {
+    margin-right: 0;
+  }
+
+  .certificate-buttons .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .certificate-left h2 {
+    font-size: 36px;
+  }
+
+  .certificate-left p {
+    font-size: 18px;
+  }
+
+  .certificate-buttons .primary-btn, .secondary-btn{
+    font-size: 16px;
+    padding: 12px 24px;
+    text-align: center;
+  }
+
+  .slide img {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .certificate-section {
+    padding: 60px 100px;
+  }
+
+  .certificate-left h2 {
+    font-size: 42px;
+  }
+
+  .certificate-left p {
+    font-size: 20px;
+  }
+
+  .slider {
+    max-width: 800px;
+  }
+
+  .slide img {
+    max-width: 800px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.price-section{
+ 
+  
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+  padding: 20px;
+
+}
+h2 {
+  font-size: 50px;
+  font-family: "Marcellus", serif;
+  font-weight: 400;
+}
+
+.portfolio-text {
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  padding: 3%;
+  font-style: normal;
+}
+
+
+
+
+
+.price-text{
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  padding: 3%;
+  font-style: normal;  
+}
+
+.pricing-table {
+ display: flex;
+  gap: 10%;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+  
+}
+
+.pricing-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 1%;
+  float: right;
+}
+
+.pricing-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.pricing-card.featured {
+  
+  background-color: #f0f8ff;
+}
+
+.title {
+  font-size: 1.0rem;
+  margin: 10px 0;
+  color: #333;
+  font-family: "Work Sans", sans-serif;
+}
+
+.price {
+  font-size: 2.5rem;
+  color: #2C5F4E;
+}
+
+.price span {
+  font-size: 1rem;
+  color: #666;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.features li {
+  margin: 10px 0;
+  color: #555;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #2C5F4E;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: rgb(236, 84, 14);
+}
+
+.plan-image {
+  width: 90px;
+  /*Размеризображения*/height: auto;
+  /*Сохранятьпропорции*/margin: 0 auto 20px;
+  /*Центрированиеиотступснизу*/display: block;
+  border-radius: 50%;
+  /*Примерсзакруглениемизображения*/border: 2px solid #ddd;
+   /* Пример обводки */:;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.featured .plan-image {
+  border-color: #007BFF; /* Цвет рамки для выделенного плана */
+}
+
+
+
+@media (max-width: 768px) {
+  .pricing-table {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+/* Общие стили */
+.sertificat {
+  text-align: center;
+  padding: 40px 0;
+}
+
+
+
+.price-text {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Общий стиль для контейнера */
+.sertificat {
+  text-align: center;
+  padding: 40px 0;
+}
+
+
+
+.price-text {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+
+
+
+.row-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column-gallery {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column-gallery img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column-gallery {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column-gallery {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+.gallery {
+ 
+  text-align: center;
+  padding: 40px 0;
+
+
+}
+
+.row-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.column-gallery {
+  flex: 1 1 20%; /* Минимальная ширина колонки - 20% */
+  max-width: 20%;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+.column-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.column-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Адаптивность для планшетов */
+@media screen and (max-width: 1024px) {
+  .column-gallery {
+    flex: 1 1 25%; /* 4 колонки */
+    max-width: 25%;
+  }
+}
+
+/* Адаптивность для мобильных */
+@media screen and (max-width: 768px) {
+  .column-gallery {
+    flex: 1 1 50%; /* 2 колонки */
+    max-width: 50%;
+  }
+}
+
+/* Адаптивность для маленьких экранов */
+@media screen and (max-width: 480px) {
+  .column-gallery {
+    flex: 1 1 100%; /* 1 колонка */
+    max-width: 100%;
+  }
+}
+
+/* Адаптивность для больших экранов (телевизоров) */
+@media screen and (min-width: 1600px) {
+  .column-gallery {
+    flex: 1 1 12.5%; /* 8 колонок */
+    max-width: 12.5%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1920px) {
+  body {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}
+
+/* Основные стили */
+.reviews {
+  max-width: 100%;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 50px;
+  font-family: "Marcellus", serif;
+  font-weight: 400;
+}
+
+.reviews-text {
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  padding: 3%;
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+/* Обертка для отзывов */
+.reviews-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Контейнер для отзывов */
+.review-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 20px;
+}
+
+/* Стиль для отдельных отзывов */
+.review {
+  min-width: 250px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.review h4 {
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #333;
+}
+
+.review p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Стрелки прокрутки */
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.scroll-button.left {
+  left: 10px;
+}
+
+.scroll-button.right {
+  right: 10px;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 767px) {
+  h2 {
+    font-size: 30px;
+  }
+
+  .reviews-text {
+    font-size: 14px;
+  }
+
+  .review {
+    min-width: 80%;
+  }
+
+  .scroll-button {
+    font-size: 20px;
+  }
+}
+
+/* Для планшетов и небольших экранов */
+@media (min-width: 768px) and (max-width: 1024px) {
+  h2 {
+    font-size: 40px;
+  }
+
+  .reviews-text {
+    font-size: 16px;
+  }
+
+  .review {
+    min-width: 45%;
+  }
+}
+
+/* Для больших экранов (десктопы и телевизоры) */
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 50px;
+  }
+
+  .reviews-text {
+    font-size: 18px;
+  }
+
+  .review {
+    min-width: 30%;
+  }
+}
+/* Основные стили */
+.contact-form {
+  max-width: 100%;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 50px;
+  font-family: "Marcellus", serif;
+  font-weight: 400;
+}
+
+/* Контент */
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 40px;
+  background-color: #F2F7F2;
+}
+
+.contact-info {
+  width: 80%;
+  text-align: left;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.map-container {
+  width: 48%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Социальные ссылки */
+.social-links {
+  margin-top: 30px;
+}
+
+.social-links a {
+  margin: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #2C5F4E;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 767px) {
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info, .map-container {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .social-links a {
+    font-size: 16px;
+  }
+}
+
+/* Для планшетов и небольших экранов */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contact-info {
+    width: 45%;
+  }
+
+  .map-container {
+    width: 45%;
+  }
+}
+
+/* Для больших экранов (десктопы и телевизоры) */
+@media (min-width: 1024px) {
+  .contact-info {
+    width: 45%;
+  }
+
+  .map-container {
+    width: 45%;
+  }
+}
+/* Основной футер */
+.footer {
+  background-color: #2C5F4E;
+  color: white;
+  padding: 20px 0;
+  font-family: "Work Sans", sans-serif;
+  text-align: center;
+}
+
+/* Контейнер футера */
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Логотип */
+.footer-logo img {
+  width: 110%;
+  height: auto;
+  
+  
+}
+
+/* Блоки с ссылками */
+.footer-links {
+  width: 200px; /* 2 блока на одной линии */
+
+  
+}
+
+
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover 
+ {
+  color: #f2a900;
+}
+
+.social-links a:hover{
+  color: #f2a900;
+}
+
+/* Нижний блок с копирайтом */
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* Социальные иконки */
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-links img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover img {
+  transform: scale(1.1);
+}
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #f2a900;
+  color: white;
+  font-size: 17px;
+  border: 1px solid #f2a900;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #2C5F4E;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+/* Адаптивность для мобильных */
+@media (max-width: 767px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-logo img {
+    width: 100px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-links a {
+    margin: 0 15px;
+  }
+}
+
+/* Для планшетов и небольших экранов */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer-links {
+    width: 100%;
+  }
+
+  .footer-logo img {
+    width: 110px;
+  }
+}
+
+/* Для больших экранов (десктопы и телевизоры) */
+@media (min-width: 1024px) {
+  .footer-links {
+    width: 100%;
+  }
+
+  .footer-logo img {
+    width: 65%;
+    float: left;
+    margin: 0 0 -250px;
+  }
+}
+
